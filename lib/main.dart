@@ -1,24 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:practiceui/homepage.dart';
-import 'package:practiceui/mybutton.dart';
-
-void main() {
+import 'menu/homepage.dart';
+void main()
+{
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
-      ),
-      home: Homepage(),
+      home: Scaffold( body:Homepage()),
     );
   }
 }
-
