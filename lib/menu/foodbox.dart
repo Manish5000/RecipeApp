@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 class Foodbox extends StatefulWidget {
 final String? imgpath;
 final String? name;
-final Color? c;
 
-Foodbox({@required this.name,@required this.imgpath,@required this.c});
+
+Foodbox({@required this.name,@required this.imgpath,});
   @override
   _FoodboxState createState() => _FoodboxState();
 }
 
 class _FoodboxState extends State<Foodbox> {
+ 
   
   @override
   Widget build(BuildContext context) {
@@ -35,11 +36,7 @@ class _FoodboxState extends State<Foodbox> {
             
             children: <Widget>[
           GestureDetector(
-            onTap: (){
-              setState(() {
-                
-              });
-            },
+            onTap: (){},
             child: Icon(Icons.notifications,color: Color(0xFFa79feb),)),
           GestureDetector(
             onTap: (){},
