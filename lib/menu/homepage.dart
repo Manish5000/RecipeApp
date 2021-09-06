@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Button.dart';
-import 'foodbox.dart';
 import 'fastfood.dart';
 import 'cake.dart';
 import 'kabab.dart';
@@ -43,18 +42,19 @@ class _HomepageState extends State<Homepage> {
           SizedBox(height: 40,),
           Container(
             padding: EdgeInsets.all(20),
-            child:
-           TextField(
-              keyboardType: TextInputType.text,
-              decoration:
-              InputDecoration(
-                prefixIcon: Icon(Icons.search,color: Colors.white),
-                filled: true,
-                fillColor: Color(0xFFa79feb),
-                hintText:'what bookmark are you searching for?',
-                hintStyle: TextStyle(color: Colors.white) , 
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(40))),
-              )
+            child:TextField(
+                    cursorColor: Colors.black,
+                    keyboardType: TextInputType.text,
+                    textInputAction: TextInputAction.go,
+                    decoration: InputDecoration(
+                      fillColor: Color(0xffa79feb),
+                      filled: true,
+                      prefixIcon: Icon(Icons.search,color: Colors.white),
+                        border:OutlineInputBorder(borderRadius: BorderRadius.circular(40)), 
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 15),
+                        hintText: "what bookmark are you searching for"),
+                  ),
           ),
         ],
       ),
@@ -105,11 +105,12 @@ SizedBox(height: 10,),
           },
           controller: pageController,
           children: <Widget>[
+            
             All(),
             Cake(),
             Fastfood(),
             Kabab(),
-      
+            
             
           ],
         ),

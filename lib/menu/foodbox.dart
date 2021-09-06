@@ -10,15 +10,14 @@ Foodbox({@required this.name,@required this.imgpath,});
 }
 
 class _FoodboxState extends State<Foodbox> {
- 
-  
+  Color? d=Color(0xff818090);
+  Color? e=Color(0xFF6c60e0);
   @override
   Widget build(BuildContext context) {
     return Container(
-      
-      height: 100,
+      height: 80,
       width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(17)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(17), ),
       child:Row(
         children: <Widget>[
         Container( margin: EdgeInsets.all(10),height: 70,width: 70,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),image: DecorationImage(fit: BoxFit.cover,image: AssetImage(widget.imgpath!),)),),
@@ -36,11 +35,13 @@ class _FoodboxState extends State<Foodbox> {
             
             children: <Widget>[
           GestureDetector(
-            onTap: (){},
-            child: Icon(Icons.notifications,color: Color(0xFFa79feb),)),
+            onTap: (){
+              d=e;
+            },
+            child: Icon(Icons.notifications,color: d)),
           GestureDetector(
-            onTap: (){},
-            child:  Icon(Icons.star_rounded,color: Color(0xFFa79feb)),)
+            onTap: (){d=e;},
+            child:  Icon(Icons.star_rounded,color: d),)
           ],
           ),
         ],

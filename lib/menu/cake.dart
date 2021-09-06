@@ -16,7 +16,7 @@ class _CakeState extends State<Cake> {
           child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donat Cake',)
         ),
         SizedBox(height: 10,),
-        
+        //Divider(color: Colors.grey,endIndent: 30,indent: 30,),
         GestureDetector(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/vanillacake.jpg',name: 'Vanilla Cake',)
