@@ -11,23 +11,23 @@ class _CakeState extends State<Cake> {
     return ListView(
       physics: ScrollPhysics(),
       children: <Widget>[
-        GestureDetector(
+       InkWell(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donat Cake',)
         ),
         SizedBox(height: 10,),
         //Divider(color: Colors.grey,endIndent: 30,indent: 30,),
-        GestureDetector(
+        InkWell(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/vanillacake.jpg',name: 'Vanilla Cake',)
         ),
         SizedBox(height: 10,),
-        GestureDetector(
+        InkWell(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/pancake.jpg',name: 'Pancake Cake',)
         ),
         SizedBox(height: 10,),
-        GestureDetector(
+        InkWell(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/cupcake.jpg',name: 'Cup Cake',)
         ),

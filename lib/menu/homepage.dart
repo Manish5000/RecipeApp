@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Button.dart';
+
 import 'fastfood.dart';
 import 'cake.dart';
 import 'kabab.dart';
@@ -24,7 +25,7 @@ class _HomepageState extends State<Homepage> {
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
-        color: Color(0xFF6c60e0),
+        gradient: LinearGradient(colors: [Color(0xFFf58056),Color(0xFF2c77c7)],end: Alignment.bottomRight,begin: Alignment.topLeft,)
       ),
       child: Column(
         children: <Widget>[
@@ -42,7 +43,8 @@ class _HomepageState extends State<Homepage> {
           SizedBox(height: 40,),
           Container(
             padding: EdgeInsets.all(20),
-            child:TextField(
+            child:
+           TextField(
                     cursorColor: Colors.black,
                     keyboardType: TextInputType.text,
                     textInputAction: TextInputAction.go,
@@ -53,7 +55,7 @@ class _HomepageState extends State<Homepage> {
                         border:OutlineInputBorder(borderRadius: BorderRadius.circular(40)), 
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 15),
-                        hintText: "what bookmark are you searching for"),
+                        hintText: "what Category are you searching for"),
                   ),
           ),
         ],
@@ -105,12 +107,11 @@ SizedBox(height: 10,),
           },
           controller: pageController,
           children: <Widget>[
-            
             All(),
             Cake(),
             Fastfood(),
             Kabab(),
-            
+      
             
           ],
         ),

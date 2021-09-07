@@ -13,11 +13,11 @@ class _MainhomeState extends State<Mainhome> {
     Column(
       children: <Widget>[
      Container(
-      height: 220,
+      height: 250,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
-        color: Color(0xFF6c60e0),
+        gradient: LinearGradient(colors: [Color(0xFFf58056),Color(0xFF2c77c7)],end: Alignment.bottomRight,begin: Alignment.topLeft,)
       ),
       child: Column(
         children: <Widget>[
@@ -25,14 +25,29 @@ class _MainhomeState extends State<Mainhome> {
           Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Icon(Icons.bubble_chart_rounded,color: Colors.white,size: 40,),
-            SizedBox(width: 8,),
-            Text('Cooking',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 26),),
-            SizedBox(width: 8,),
-            Icon(Icons.notifications,color: Colors.white,),
+            Icon(Icons.bubble_chart_rounded,color: Colors.white,size: 43,),
+            SizedBox(width: 160,),
+           
+            Icon(Icons.notifications,color: Colors.white,size: 35,),
           ],
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              SizedBox(width: 42,),
+              Text('Hi, Bada Shahjada', style: TextStyle(color: Colors.white,fontSize: 22),),
+            ],
+          ),
+          SizedBox(height: 5,),
+          Row(
+            children: [
+              SizedBox(width: 42,),
+              Text('Welcome back', style: TextStyle(color: Colors.white,fontSize: 28,fontWeight: FontWeight.bold),),
+              SizedBox(width: 10,),
+              Icon(Icons.person_outline_rounded,color: Colors.white,size: 30,)
+            ],
+          ),
+          SizedBox(height: 10,),
           Container(
             padding: EdgeInsets.all(20),
             child:TextField(
@@ -69,32 +84,56 @@ class _MainhomeState extends State<Mainhome> {
         ),
         ),
 Expanded(
-  child:   GridView.count(crossAxisCount: 2,
+  child:   GridView.count(crossAxisCount: 2, 
   
-  mainAxisSpacing: 20,
+  mainAxisSpacing: 25,
   
-  crossAxisSpacing: 20,
+  crossAxisSpacing: 10,
   
   children: <Widget>[
-    Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(40)),
-      child: Mycard(Colors.yellow.shade200)
-      ),
-    Container(
-      child: Mycard(Colors.blue.shade200)
-      ),
-    Container(
-      child: Mycard(Colors.purple.shade200)
-      ),
-    Container(
-      child: Mycard(Colors.pink.shade200)
-      ),
-    Container(
-      child: Mycard(Colors.green.shade200)
-      ),
-    Container(
-      child: Mycard(Colors.orange.shade50)
-      ),
+    InkWell(
+      onTap: (){},
+      child: Container(
+       
+        
+        child: Mycard(c: Colors.yellow.shade100,image: 'assets/fastfoodhome.jpg',title: 'Fastfood', )
+        ),
+    ),
+    InkWell(
+       onTap: (){},
+      child: Container(
+        
+        child: Mycard(c: Colors.blue.shade100,image: 'assets/fastfoodhome.jpg',title: 'Chinese',)
+        ),
+    ),
+    InkWell(
+       onTap: (){},
+      child: Container(
+        
+        child: Mycard(c: Colors.purple.shade100,image: 'assets/fastfoodhome.jpg',title: 'Kabab',)
+        ),
+    ),
+    InkWell(
+       onTap: (){},
+      child: Container(
+        
+        child: Mycard(c: Colors.pink.shade100,image: 'assets/fastfoodhome.jpg',title: '',)
+        ),
+    ),
+    InkWell(
+       onTap: (){},
+      child: Container(
+       
+        child: Mycard(c:Colors.green.shade100,image: 'assets/fastfoodhome.jpg',title: '',)
+        ),
+    ),
+    InkWell(
+       onTap: (){},
+      child: Container(
+        
+        child: Mycard(c: Colors.orange.shade100,image: 'assets/fastfoodhome.jpg',title: '',)
+        ),
+    ),
   ]
   
   ),
