@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import '../components/foodbox.dart';
-class Cake extends StatefulWidget {
+class Shakes extends StatefulWidget {
+  
+
   @override
-  _CakeState createState() => _CakeState();
+  _ShakesState createState() => _ShakesState();
 }
 
-class _CakeState extends State<Cake> {
+class _ShakesState extends State<Shakes> {
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -13,23 +15,23 @@ class _CakeState extends State<Cake> {
       children: <Widget>[
        InkWell(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donat Cake',)
+          child: Foodbox(imgpath: 'assets/stawberryshake.jpg',name: 'Stawberry Shake',)
         ),
         SizedBox(height: 10,),
         //Divider(color: Colors.grey,endIndent: 30,indent: 30,),
         InkWell(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/vanillacake.jpg',name: 'Vanilla Cake',)
+          child: Foodbox(imgpath: 'assets/oreoshake.jpg',name: 'Oreo Shake',)
         ),
         SizedBox(height: 10,),
         InkWell(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/pancake.jpg',name: 'Pancake Cake',)
+          child: Foodbox(imgpath: 'assets/kitkatshake.jpg',name: 'Kitkat Shake',)
         ),
         SizedBox(height: 10,),
         InkWell(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/cupcake.jpg',name: 'Cup Cake',)
+          child: Foodbox(imgpath: 'assets/pineappleshake.jpg',name: 'Pineapple Shake',)
         ),
         SizedBox(height: 10,),
         // GestureDetector(
@@ -39,5 +41,7 @@ class _CakeState extends State<Cake> {
         // SizedBox(height: 10,),
       ],
     );
+      
+    
   }
 }

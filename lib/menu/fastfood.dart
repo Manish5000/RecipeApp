@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'foodbox.dart';
+
+import '../components/foodbox.dart';
 
 class Fastfood extends StatefulWidget {
   

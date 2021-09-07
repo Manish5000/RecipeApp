@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'menu/homepage.dart';
-import 'mainhome.dart';
+import 'package:practiceui/pages/homepage.dart';
+import 'package:practiceui/pages/mainhome.dart';
 void main()
 {
   runApp(MyApp());

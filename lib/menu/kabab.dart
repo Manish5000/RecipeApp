@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'foodbox.dart';
+import '../components/foodbox.dart';
 
 class Kabab extends StatefulWidget {
  
@@ -22,12 +22,12 @@ class _KababState extends State<Kabab> {
         
         GestureDetector(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/paneerkabab.jpg',name: 'Paneer Kabab',)
+          child: Foodbox(imgpath: 'assets/paneerkabab.webp',name: 'Paneer Kabab',)
         ),
         SizedBox(height: 10,),
         GestureDetector(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/muttonkabab.jpg',name: 'Mutton Kabab',)
+          child: Foodbox(imgpath: 'assets/muttonkabab.webp',name: 'Mutton Kabab',)
         ),
         SizedBox(height: 10,),
         GestureDetector(

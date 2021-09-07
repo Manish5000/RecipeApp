@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'Button.dart';
+import 'package:practiceui/components/button.dart';
 
-import 'fastfood.dart';
-import 'cake.dart';
-import 'kabab.dart';
-import 'all.dart';
+import 'package:practiceui/menu/fastfood.dart';
+import 'package:practiceui/menu/all.dart';
+import 'package:practiceui/menu/kabab.dart';
+import 'package:practiceui/menu/cake.dart';
+import 'package:practiceui/menu/shakes.dart';
 class Homepage extends StatefulWidget {
   const Homepage({ Key? key }) : super(key: key);
 
@@ -77,6 +78,7 @@ class _HomepageState extends State<Homepage> {
       Mybutton(t: 'Cake',index: 1,currentindex: _currentindex,pageController: pageController,),
       Mybutton(t: 'Fast Food',index: 2,currentindex: _currentindex,pageController: pageController,),
       Mybutton(t: 'Kabab',index: 3,currentindex: _currentindex,pageController: pageController,),
+      Mybutton(t: 'Shakes',index: 4,currentindex: _currentindex,pageController: pageController,),
       // Mybutton(t: 'Chinese',index: 4,currentindex: _currentindex,pageController: pageController,)
       ]
       ,),
@@ -111,6 +113,7 @@ SizedBox(height: 10,),
             Cake(),
             Fastfood(),
             Kabab(),
+            Shakes(),
       
             
           ],
