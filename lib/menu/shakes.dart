@@ -18,7 +18,7 @@ class _ShakesState extends State<Shakes> {
           child: Foodbox(imgpath: 'assets/stawberryshake.jpg',name: 'Stawberry Shake',)
         ),
         SizedBox(height: 10,),
-        //Divider(color: Colors.grey,endIndent: 30,indent: 30,),
+        
         InkWell(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/oreoshake.jpg',name: 'Oreo Shake',)

@@ -60,17 +60,37 @@ class _AllState extends State<All> {
         SizedBox(height: 10,),
         GestureDetector(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/paneerkabab.jpg',name: 'Paneer Kabab',)
+          child: Foodbox(imgpath: 'assets/paneerkabab.webp',name: 'Paneer Kabab',)
         ),
         SizedBox(height: 10,),
         GestureDetector(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/muttonkabab.jpg',name: 'Mutton Kabab',)
+          child: Foodbox(imgpath: 'assets/muttonkabab.webp',name: 'Mutton Kabab',)
         ),
         SizedBox(height: 10,),
         GestureDetector(
           onTap: (){},
           child: Foodbox(imgpath: 'assets/chickenkabab.jpg',name: 'Chicken Kabab',)
+        ),
+        SizedBox(height: 10,),
+        GestureDetector(
+          onTap: (){},
+          child: Foodbox(imgpath: 'assets/stawberryshake.jpg',name: 'Stawberry Shake',)
+        ),
+        SizedBox(height: 10,),
+        GestureDetector(
+          onTap: (){},
+          child: Foodbox(imgpath: 'assets/oreoshake.jpg',name: 'Oreo Shake',)
+        ),
+        SizedBox(height: 10,),
+        GestureDetector(
+          onTap: (){},
+          child: Foodbox(imgpath: 'assets/kitkatshake.jpg',name: 'Kitkat Shake',)
+        ),
+        SizedBox(height: 10,),
+        GestureDetector(
+          onTap: (){},
+          child: Foodbox(imgpath: 'assets/pineappleshake.jpg',name: 'Pineapple Shake',)
         ),
         SizedBox(height: 10,),
        
