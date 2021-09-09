@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
           Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,),onTap: (){Navigator.pop(context, MaterialPageRoute(builder: (context)=>Mainhome()));},),
+            InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,),onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Mainhome()));},),
             SizedBox(width: 8,),
             Text('Cooking',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 26),),
             SizedBox(width: 8,),

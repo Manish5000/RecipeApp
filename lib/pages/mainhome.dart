@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practiceui/components/categorycard.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practiceui/menu/fastfood.dart';
 import 'package:practiceui/pages/homepage.dart';
 class Mainhome extends StatefulWidget {
 
@@ -95,9 +94,7 @@ Expanded(
   
   children: <Widget>[
     InkWell(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
-      },
+      onTap: (){Navigator.push(context, MaterialPageRoute(builder:(context)=> Homepage()));},
       child: Container(
        
         

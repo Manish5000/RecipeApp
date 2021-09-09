@@ -14,7 +14,7 @@ class _CakeState extends State<Cake> {
       children: <Widget>[
        InkWell(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donat Cake',)
+          child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donut Cake',)
         ),
         SizedBox(height: 10,),
         //Divider(color: Colors.grey,endIndent: 30,indent: 30,),

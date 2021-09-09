@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:practiceui/components/mybutton.dart';
+import 'package:practiceui/pages/homepage.dart';
 class Description extends StatefulWidget {
   
 
@@ -23,6 +25,7 @@ class _DescriptionState extends State<Description> {
                 decoration: BoxDecoration(
                  gradient: LinearGradient(colors: [Color(0xFFf58056),Color(0xFF2c77c7)],end: Alignment.bottomRight,begin: Alignment.topLeft,)
                 ),
+                
             ),
           
           
@@ -75,7 +78,9 @@ class _DescriptionState extends State<Description> {
                   SizedBox(height: 30,),
                   Row(children: [Icon(Icons.photo),
                       SizedBox(width: 5,),
-                      Text('Photos', style: GoogleFonts.roboto(fontSize: 22) ),],),
+                      Text('Photos', style: GoogleFonts.roboto(fontSize: 22) ),
+                      Smallbutton(color1: Color(0xFF6c60e0),color2: Colors.white,name: 'Cancel',)
+                      ],),
                      
                 
                       
@@ -93,7 +98,11 @@ class _DescriptionState extends State<Description> {
             right: 25,
             child: CircleAvatar(radius: 22, child: Icon(Icons.star_rate_rounded,color: Colors.orange.shade500,size: 40,),backgroundColor: Colors.white,),),
         
-           
+           Positioned(
+             top: 40,
+             left: 30,
+             child: InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,),
+             onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));},),)
           ],
         )
         
