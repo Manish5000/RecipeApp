@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practiceui/pages/description.dart';
 import '../components/foodbox.dart';
 class Cake extends StatefulWidget {
   @override
@@ -18,7 +19,9 @@ class _CakeState extends State<Cake> {
         SizedBox(height: 10,),
         //Divider(color: Colors.grey,endIndent: 30,indent: 30,),
         InkWell(
-          onTap: (){},
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> Description()));
+          },
           child: Foodbox(imgpath: 'assets/vanillacake.jpg',name: 'Vanilla Cake',)
         ),
         SizedBox(height: 10,),

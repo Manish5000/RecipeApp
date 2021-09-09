@@ -6,6 +6,7 @@ import 'package:practiceui/menu/all.dart';
 import 'package:practiceui/menu/kabab.dart';
 import 'package:practiceui/menu/cake.dart';
 import 'package:practiceui/menu/shakes.dart';
+import 'package:practiceui/pages/mainhome.dart';
 class Homepage extends StatefulWidget {
   const Homepage({ Key? key }) : super(key: key);
 
@@ -34,7 +35,7 @@ class _HomepageState extends State<Homepage> {
           Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Icon(Icons.arrow_back_ios,color: Colors.white,),
+            InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,),onTap: (){Navigator.pop(context, MaterialPageRoute(builder: (context)=>Mainhome()));},),
             SizedBox(width: 8,),
             Text('Cooking',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 26),),
             SizedBox(width: 8,),
