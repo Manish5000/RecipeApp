@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:practiceui/components/categorycard.dart';
-import 'package:google_fonts/google_fonts.dart';
 class Mainhome extends StatefulWidget {
 
   @override
@@ -36,7 +35,7 @@ class _MainhomeState extends State<Mainhome> {
           Row(
             children: [
               SizedBox(width: 42,),
-              Text('Hi, Bada Shahjada', style: GoogleFonts.roboto(color: Colors.white,fontSize: 20),),
+              Text('Hi, Bada Shahjada', style: TextStyle(color: Colors.white,fontSize: 22),),
             ],
           ),
           SizedBox(height: 5,),
@@ -50,7 +49,7 @@ class _MainhomeState extends State<Mainhome> {
           ),
           SizedBox(height: 10,),
           Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(20),
             child:TextField(
                     cursorColor: Colors.black,
                     keyboardType: TextInputType.text,
@@ -104,21 +103,21 @@ Expanded(
        onTap: (){},
       child: Container(
         
-        child: Mycard(c: Colors.blue.shade100,image: 'assets/chinesehome.jpg',title: 'Chinese',)
+        child: Mycard(c: Colors.blue.shade100,image: 'assets/fastfoodhome.jpg',title: 'Chinese',)
         ),
     ),
     InkWell(
        onTap: (){},
       child: Container(
         
-        child: Mycard(c: Colors.purple.shade100,image: 'assets/kababhome.jpg',title: 'Kabab',)
+        child: Mycard(c: Colors.purple.shade100,image: 'assets/fastfoodhome.jpg',title: 'Kabab',)
         ),
     ),
     InkWell(
        onTap: (){},
       child: Container(
         
-        child: Mycard(c: Colors.pink.shade100,image: 'assets/shakeshome.jpg',title: 'Shakes',)
+        child: Mycard(c: Colors.pink.shade100,image: 'assets/fastfoodhome.jpg',title: '',)
         ),
     ),
     InkWell(
