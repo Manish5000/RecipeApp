@@ -14,15 +14,15 @@ class _SmallbuttonState extends State<Smallbutton> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
+      height: 45,
+      width: 150,
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: widget.color2!,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: widget.color1!)),
+      child: InkWell(child: Text(widget.name!,style: GoogleFonts.roboto(fontSize:20,color: widget.color1!),),));
     
-      color: widget.color2! ,
-      decoration: BoxDecoration(color: widget.color1,
-      borderRadius: BorderRadius.circular(20),
-      border: Border.all(width: 1,color: widget.color1! )
-      
-      ),
-      
-      child: InkWell(child: Text(widget.name!,style: GoogleFonts.roboto(fontSize:20,color: widget.color1!),),)
-    );
   }
 }

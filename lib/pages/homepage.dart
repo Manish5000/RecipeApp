@@ -37,7 +37,7 @@ class _HomepageState extends State<Homepage> {
           children: <Widget>[
             InkWell(child: Icon(Icons.arrow_back_ios,color: Colors.white,),onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Mainhome()));},),
             SizedBox(width: 8,),
-            Text('Cooking',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 26),),
+            Text('Recipes',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 26),),
             SizedBox(width: 8,),
             Icon(Icons.notifications,color: Colors.white,),
           ],

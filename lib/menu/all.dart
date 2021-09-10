@@ -18,7 +18,7 @@ class _AllState extends State<All> {
       children: <Widget>[
         GestureDetector(
           onTap: (){},
-          child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donat Cake',)
+          child: Foodbox(imgpath: 'assets/donat.jpg',name: 'Donut Cake',)
         ),
         SizedBox(height: 10,),
         
