@@ -14,7 +14,7 @@ class _SmallbuttonState extends State<Smallbutton> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+    
       color: widget.color2! ,
       decoration: BoxDecoration(color: widget.color1,
       borderRadius: BorderRadius.circular(20),

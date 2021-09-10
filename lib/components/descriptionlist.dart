@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class desclist extends StatelessWidget {
+class Desclist extends StatelessWidget {
   List<String> itemdesc=[];
   List<String> itemname=[];
 

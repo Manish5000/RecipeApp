@@ -75,11 +75,13 @@ class _DescriptionState extends State<Description> {
                       Text("When you do come across a recipe that's\n specifically called vanilla cake and not white\n or yellow cake, look closely at the ingredients\n If it contains only egg whites, it's a white cake\n, and if it contains whole eggs, it's a yellow cake.\n The opposite end of the spectrum isn’t so\n simple. There’s a whole lot of terminology to\n describe what seems to be the same thing.\n But are white, yellow, and vanilla cake actually\n the same across the board", textAlign: TextAlign.justify, style: GoogleFonts.roboto(fontSize:15,fontWeight: FontWeight.w300, ),)
                     ],
                   ),
-                  SizedBox(height: 30,),
+                  SizedBox(height: 10,),
                   Row(children: [Icon(Icons.photo),
                       SizedBox(width: 5,),
                       Text('Photos', style: GoogleFonts.roboto(fontSize: 22) ),
+                      SizedBox(height: 2,),
                       Smallbutton(color1: Color(0xFF6c60e0),color2: Colors.white,name: 'Cancel',)
+                      
                       ],),
                      
                 
